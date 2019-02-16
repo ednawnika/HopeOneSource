@@ -13,8 +13,13 @@ class App extends Component {
     return (
 
       <Router>
+      <div>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between'
+        }}>
 
-        <div>
           <h4>
             <Link to='/'>Home</Link>
           </h4>
@@ -30,6 +35,7 @@ class App extends Component {
           <h4>
             <Link to='/updates'>News & Updates</Link>
           </h4>
+          </div>
 
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
